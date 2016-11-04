@@ -1,15 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wilson Ung Portfolio</title>
+	<title>Wilson Ung's Portfolio</title>
+	<meta name="author" content = "Wilson Ung">
 	<link rel ="stylesheet" href="css/style.css">
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ 	<script type="text/javascript">google.load("jquery", "1.3.2");</script>		
+	<script type = "text/javascript" src = "js/script.js"></script>
 </head>
 
 <body>
-<img src = "img/wilsononcouch.jpg"/>
-<h1>Hello World</h1>
 
-<p>Testing speed</p>
+<div id = "page-wrap">
+	<div class = "header">
+		<div class = "container">
+			<div class = "logo">
+				<h1><a href="#home">Wilson Ung</a></h1>
+			</div>
+
+			<div class = "nav">
+				<ul>
+					<li class = "current-page">
+						<a href = "#home"> Home </a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Home Background -->
+	<div class = "home-background">
+		<a id = "home" class = "smooth"></a>
+		<div id="page1">
+			<p> Welcome to my Portfolio! </p>
+		</div>
+	</div>
+
+	<!-- About Me -->
+	<div id="page2" class = "container">
+		<a id = "about" class = "smooth"></a>
+			 <img src = "img/wilson.jpg" class = "picture"/>
+			 <div class = "about-me-content">
+			 	<h2> About Me </h2>
+			 	<p> Hey, I'm Wilson. I'm a 22 years old Informatics Major studying at the University of California, Irvine (UCI). I am currently on my 5th year and will graduate this upcoming Spring Quarter of 2017.
+			 		I do not have much experience with web development, but it is a field I am hoping to get into in the future. </p>
+			 	<h2>Interests</h2>
+			 		<p> I enjoy doing many things such as playing basketball, competing with friends, eating out, cooking, playing video games, etc. However, the one thing I enjoy doing most is <strong>dancing</strong>. I am currently on UCI's collegiate dance team, CADC, and have competed all over Southern California. Here's some of our work: </p> 
+			 	<div class = "videos">
+			 		<a href ="https://www.youtube.com/watch?v=Q6VBhwmVIBA"><img src = "img/cadc.jpg"/></a>
+			 		<a href ="https://www.youtube.com/watch?v=Tnv3z3tkFNs"><img src = "img/cadc2.jpg"></a>
+			 	</div>
+			 </div>
+	</div>
+
+
+	<!-- Portfolio -->
+	<div id="page3" class = "container">
+		<a id = "portfolio" class = "smooth"></a>
+			<div class = "portfolio-title">
+				Portfolio
+			</div>
+			<div class = "portfolio-content">
+			 	<h2><strong>Proficient Languages</strong></h2>
+			 	<ul>
+					<li>HTML/CSS</li>
+		 			<li>Java</li>
+		 			<li>C++</li>
+			 	</ul>
+			 	<h2><strong>Skills Being Developed</strong></h2>
+			 	<ul>
+			 		<li>Javascript</li>
+			 		<li>jQuery</li>
+			 		<li>UI/UX</li>
+			 	</ul>
+			 	<h2><strong>Projects</strong></h2>
+
+			 	<p> <em>Tic-Tac-Toe</em> <br>
+			 		Language(s) used: C++ <br>
+			 		Description: A simple game of Tic-Tac-Toe made with graphics in Visual Studios. This game was made with one level of difficulty (expert).
+			 	</p>
+			 	<p> <br><em>Random Quote Generator</em><br> 
+			 		Language(s) used: HTML, CSS, Javascript<br>
+			 		Description: A quote generator that displays a random quote and its respective author by the click of a button. This generator used an API to gather quotes. 
+			 	</p>
+
+			</div>
+	</div>
+
+	<!-- Contact -->
+	<div id="page4" class = "container">
+		<a id = "contact" class = "smooth"></a>
+			<div class = "contact-title">
+				Contact Me
+			</div>
+			<div class = "contact-content">
+				<p> Wilson Ung<br>
+					wung@uci.edu<br>
+					University of California, Irvine - Informatics Major<br>
+					Class of 2017
+				</p>
+			</div>
+	</div>
+
+
+</div>
+
 
 </body>
 
