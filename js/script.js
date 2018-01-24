@@ -1,6 +1,6 @@
 /* Smooth Scrolling between anchors */
 $(function() {
-  var moveHeader = 300;
+  var moveHeader = 150;
   // Go to section
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
