@@ -1,5 +1,7 @@
 /* Smooth Scrolling between anchors */
 $(function() {
+  var moveHeader = 300;
+  // Go to section
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -12,4 +14,18 @@ $(function() {
       }
     }
   });
+  //End here
+
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if (scroll > moveHeader){
+        $('.header').addClass('move');
+      }else{
+        $('.header').removeClass('move');
+      }
+    function getCurrentScroll(){
+      return window.pageYOffSet || document.documentElement.scrollTop;
+    }
+  });
+
 });
