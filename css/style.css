@@ -2,29 +2,37 @@
 
 /* Desktop */
 @media (max-device-width: 2560px){
-	html{
+/*	html{
 		background: url('../img/bg2.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 100%;
 		background-attachment: fixed;
-	}
+	}*/
 
-	body{
+/*HOMEPAGE CSS*/
+	/*HOMEPAGE BODY*/
+	#home_page{
 		width: 100%;
 		font-family: "Cairo", Arial, Helvetica;
 		font-size: 1.3rem;
 		letter-spacing: 0.05rem;
-		background: rgba(0,0,0,0.8);
+		/*background: rgba(0,0,0,0.8);*/
+		background: url('../img/bg2.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		background-attachment: fixed;		
 	}
 
-	#page-wrap{
+	.page_wrap{
 		width: 100%;
 		height: 100%;
 		/*display: block;*/
 		position: absolute;
 		top: 0px;
 		left: 0px;
+		margin: 0 auto;
 	}
 
 	.banner{
@@ -40,7 +48,7 @@
 		/*background-size: 100% 50%;*/
 	}
 
-	/*Header*/
+	/*HEADER*/
 	.header{
 		position: fixed;
 		display: inline-block;
@@ -50,7 +58,7 @@
 		left: 0px;
 		z-index: 1;
 		height: 98px;
-		line-height: 40px;
+		line-height: 48px;
 		/*background: red;*/
 		overflow: hidden;
 		transition: all 0.3s ease;
@@ -70,6 +78,7 @@
 
 	a:hover{
 		color: #fbd699;
+		text-decoration: none;
 	}
 
 	.logo{
@@ -106,10 +115,10 @@
 		float: right;
 		padding: 0px 60px;
 	}
-	/*End Header*/
+	/*END HEADER*/
 
-	/*About Me*/
-	.container{
+	/*HOME PAGE COTAINER*/
+	.home_container{
 		position: relative;
 		top: 10%;
 		max-width: 80%;
@@ -205,7 +214,7 @@
 
 	.intro{
 		position: relative;
-		top: 25px;
+		top: 30px;
 	}
 
 	.intro .caption{
@@ -220,10 +229,35 @@
 	}
 
 
+	/*ARROW TO NEXT PAGE*/
+	.next_page{
+		position: relative;
+		float: right;
+		height: 60px;
+		width: 30px;
+		top: -25%;
+		right: 60px;
+	}
 
+	.right_arrow{
+		display: inline-block;
+		border: solid #eee;
+		border-width: 0 3px 3px 0;
+		padding: 15px;
+		transform: rotate(-45deg);
+	}
+
+	.right_arrow:hover{
+		border: solid #fbd699;
+		border-width: 0 3px 3px 0;
+	}
+	/*END ARROW*/
+
+
+	/* FOOTER */
 	.footer{
 		position: absolute;
-		height: 50px;
+		height: 55px;
 		color: #fff;
 		bottom: 0;
 		width: 100%;
@@ -232,6 +266,57 @@
 		font-size: 16px;
 		text-align: center;
 		padding-bottom: 6px;
+		display: inline-block;
+	}
+
+	.footer_content{
+		margin: 0 auto;
+		width: 350px;
+		display: inline-block;
+	}
+
+	.footer_icons{
+		display: inline-block;
+	}
+
+	.footer li{
+		position: relative;
+		left: -25px;
+		list-style: none;
+		display: inline-block;
+		margin: 0px 3px;
+	}
+	/*END FOOTER*/
+/*END HOMEPAGE CSS*/
+
+/*PORTFOLIO PAGE CSS*/
+	/*PORTFOLIO BODY*/
+	#portfolio_page{
+		width: 100%;
+		font-family: "Cairo", Arial, Helvetica;
+		font-size: 1.3rem;
+		letter-spacing: 0.05rem;	
+		background: #4a4a4a;	
+	}
+
+	/*CONTENT CONTAINER*/
+	.container{
+		position: relative;
+		top: 121px;
+		max-width: 80%;
+		height: 60%;
+		margin: 0 auto;
+		width: 100%;
+		padding: 2px 0px 0px 20px;
+		background: rgba(0,0,0,0.6);
+		color: #fff;
+	}
+
+	.page_title{
+		color: #fbd699;
+		font-family: "VT323", "Cairo", Arial;
+		text-transform: uppercase;
+		text-align: center;
 	}
 }
 
@@ -240,6 +325,7 @@
 
 	.header{
 		font-size: 18px;
+		background: red;
 	}
 
 	.container{
