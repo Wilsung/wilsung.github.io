@@ -2,18 +2,17 @@
 
 /* Desktop */
 @media (max-device-width: 2560px){
-/*	html{
-		background: url('../img/bg2.jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 100%;
-		background-attachment: fixed;
-	}*/
+	.current_page_color{
+		color: #fbd699;
+		font-weight: bold;
+	}
+
 
 /*HOMEPAGE CSS*/
 	/*HOMEPAGE BODY*/
 	#home_page{
 		width: 100%;
+		height: 100%;
 		font-family: "Cairo", Arial, Helvetica;
 		font-size: 1.3rem;
 		letter-spacing: 0.05rem;
@@ -25,27 +24,21 @@
 		background-attachment: fixed;		
 	}
 
-	.page_wrap{
-		width: 100%;
-		height: 100%;
-		/*display: block;*/
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		margin: 0 auto;
+	.push{
+		height: 200px;
+		margin-top:55px;
 	}
 
-	.banner{
+	.page_wrap{
 		position: absolute;
 		width: 100%;
-		height: 500px;
-		/*background: url('../img/LA_Background1.jpg');*/
-		overflow: hidden;
-		margin: 0 auto;
-		/*background-image: url("http://i.imgur.com/KjyvQ6I.jpg");*/
-		/*background-repeat: no-repeat;*/
-		/*background-position: ;*/
-		/*background-size: 100% 50%;*/
+		min-height: 100%;
+		height: auto !important;
+		/*height: auto;*/
+		/*display: block;*/
+		top: 0px;
+		left: 0px;
+		margin: 0 auto -105px;
 	}
 
 	/*HEADER*/
@@ -120,13 +113,12 @@
 	/*HOME PAGE COTAINER*/
 	.home_container{
 		position: relative;
-		top: 10%;
 		max-width: 80%;
 		height: 60%;
 		margin: 0 auto;
 		text-align: center;
 		width: 100%;
-		padding: 70px 0px 0px 20px;
+		padding: 10% 0px 0px 20px;
 		/*background: rgba(0,0,0,0.7);*/
 		color: #fff;
 	}
@@ -229,14 +221,40 @@
 	}
 
 
+	/*ARROW TO PREVIOUS PAGE*/
+	.previous_page{
+		position: fixed;
+		float: left;
+		height: 60px;
+		width: 30px;
+		left: 70px;
+		/*top: 420px;*/
+		top: 45%;
+	}
+
+	.left_arrow{
+		display: inline-block;
+		border: solid #eee;
+		border-width: 0 3px 3px 0;
+		padding: 15px;
+		transform: rotate(135deg);
+	}
+
+	.left_arrow:hover{
+		border: solid #fbd699;
+		border-width: 0 3px 3px 0;
+	}
+	/*END LEFT ARROW*/
+
 	/*ARROW TO NEXT PAGE*/
 	.next_page{
-		position: relative;
+		position: fixed;
 		float: right;
 		height: 60px;
 		width: 30px;
-		top: -25%;
-		right: 60px;
+		right: 70px;
+		/*top: 420px;*/
+		top: 45%;
 	}
 
 	.right_arrow{
@@ -251,7 +269,7 @@
 		border: solid #fbd699;
 		border-width: 0 3px 3px 0;
 	}
-	/*END ARROW*/
+	/*END RIGHT ARROW*/
 
 
 	/* FOOTER */
@@ -271,7 +289,7 @@
 
 	.footer_content{
 		margin: 0 auto;
-		width: 350px;
+		width: 390px;
 		display: inline-block;
 	}
 
@@ -292,32 +310,311 @@
 /*PORTFOLIO PAGE CSS*/
 	/*PORTFOLIO BODY*/
 	#portfolio_page{
-		width: 100%;
+		/*width: 100%;*/
+		height: 100%;
+		min-height: 1300px;
 		font-family: "Cairo", Arial, Helvetica;
 		font-size: 1.3rem;
 		letter-spacing: 0.05rem;	
 		background: #4a4a4a;	
 	}
 
+	.port_wrap{
+		height: 1950px;
+	}
+
 	/*CONTENT CONTAINER*/
 	.container{
 		position: relative;
 		top: 121px;
-		max-width: 80%;
-		height: 60%;
+		max-width: 1460px;
+		height: 1630px;
 		margin: 0 auto;
-		width: 100%;
+		width: 1560px;
 		padding: 2px 0px 0px 20px;
 		background: rgba(0,0,0,0.6);
 		color: #fff;
 	}
 
 	.page_title{
+		position: relative;
+		width: 900px;
+		margin: 0 auto;
+		border-bottom: 1.5px solid #555050;
+		/**/
+		margin-top: 50px;
 		color: #fbd699;
 		font-family: "VT323", "Cairo", Arial;
 		text-transform: uppercase;
 		text-align: center;
 	}
+
+	.portfolio_content{
+		position: relative;
+		width: 1280px;
+		height: 290px;
+		top: 70px;
+		margin: 0 auto;
+		/*background: red;*/
+	}
+
+	.portfolio_content .image{
+		border: solid #5a5a5a;
+		float: left;
+		width: 325px;
+		height: 225px;
+		margin-right: 120px;
+		padding: 10px;
+	}
+
+	.portfolio_list, .portfolio_list li, .portfolio_list h3{
+		position: relative;
+		list-style: none;
+		text-decoration: none;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.portfolio_list li{
+		height: 260px;
+		margin: 0px 0px 100px 0px;
+	}
+
+	.portfolio_list .wikipedia_content{
+		position: relative;
+		display: inline-block;
+		width: 780px;
+	}
+/*END PORTFOLIO PAGE CSS*/
+
+/*ABOUT ME PAGE CSS*/
+	#about_me_page{
+		/*width: 100%;*/
+		height: 100%;
+		min-height: 100%;
+		font-family: "Cairo", Arial, Helvetica;
+		font-size: 1.3rem;
+		letter-spacing: 0.05rem;	
+		background: #868686;	
+	}
+
+	.about_container{
+		height: 2000px;
+	}
+
+	.about_wrap{
+		height: 100%;
+		height: 2300px;
+	}
+
+	.about_container .intro{
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		top: 0px;
+		font-size: 16px;
+	}
+
+	.about_me_content{
+		position: relative;
+		margin: 0 auto;
+		margin-top: 20px;
+		width: 1200px;
+		height: 300px;
+	}
+
+	.about_me_content .wilson_picture{
+		height: 300px;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.about_me_content .image{
+		position: relative;
+		height: 250px;
+		/*display: : inline-block;*/
+		border-radius: 40px;
+	}
+	.about_me_content .description{
+		position: relative;
+		float: left;
+		left: 20px;
+		/*display: inline-block;*/
+	}	
+
+	/*Skills Section*/
+	.skills_section{
+		position: relative;
+		margin-top: 260px;
+		left: 20px;
+	}
+
+	.skills_section .skills_title, .education_section .education_title{
+		font-family: "VT323", "Ropa", Arial;
+		text-transform: uppercase;
+		color: #fbd699;
+		margin-bottom: 20px;
+	}
+
+	.logo_1{
+		position: relative;
+		width: 900px;
+		height: 120px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.logo{
+		/*position: relative;*/
+		width: 100px;
+		height: 110px;
+		margin: 0px 25px;
+		/*display: inline-block;*/
+		/*text-align: center;*/
+		font-family: "Cairo", Arial;
+		font-size: 14px;
+		letter-spacing: 0.05rem;
+	}
+
+
+	/*Education Section*/
+	.education_section{
+		position: relative;
+		margin-top: 60px;
+		left: 20px;
+	}
+
+	.education_section .education_content{
+		width: 1100px;
+		height: 300px;
+	}
+
+	.education_content .uci{
+		position: relative;
+		width: 980px;
+		height: 400px;
+		display: inline-block;
+	}
+
+	.education_content .picture img{
+		position: relative;
+		float: left;
+		height: 250px;
+		width: 250px;
+		border: 2px solid #5a5a5a;
+		margin: 26px 100px 0px 0px;
+	}
+
+	.education_content .uci_content{
+		position: relative;
+		display: inline-block;
+		width: 620px;
+		height: 300px;
+		line-height: 26px;
+	}
+/*END ABOUT ME PAGE CSS*/
+
+
+/*CONTACT PAGE CSS*/
+	#contact_page{
+		height: 100%;
+		min-height: 100%;
+		font-family: "Cairo", Arial, Helvetica;
+		font-size: 1.3rem;
+		letter-spacing: 0.05rem;	
+		background: #b4b4b4;		
+	}
+
+	.contact_container{
+		height: 675px;
+	}
+
+	.contact_wrap{
+		height: 100%;
+	}
+
+	.contact_container .intro{
+		position: relative;
+		top: 0px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contact_form{
+		position: relative;
+		width: 550px;
+		height: 490px;
+		margin: 0 auto;
+		top: -10px;
+
+	}
+	.contact_form label{
+		display: block;
+		margin-top: 15px;
+		letter-spacing: 2px;
+		font-size: 14px;
+	}
+
+	.contact_form input, textarea{
+		width: 500px;
+		height: 25px;
+		border-radius: 5px;
+		background: #efefef;
+		border: 1px solid #dedede;
+		padding: 10px;
+		margin-top: 3px;
+		font-size: 0.7em;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #3a3a3a;
+	}
+
+	.contact_form .first, .contact_form .last{
+		width: 236px;
+	}
+
+	.contact_form textarea{
+		height: 70px;
+		max-height: 100px;
+		max-width: 500px;
+	}
+
+	.contact_form input:focus, textarea:focus{
+		border: 1px solid #0004ff;
+	}
+
+	/*SUBMIT BUTTON*/
+	.move_submit{
+		margin: 0 auto;
+		width: 127px;
+		height: 38px;
+	}
+	#submit{
+		margin: 0 auto;
+		width: 127px;
+		height: 38px;
+		font-family: "Cairo", Arial;
+		letter-spacing: 0.1rem;
+		line-height: 0px;
+		text-transform: uppercase;
+		cursor: pointer;
+		color: white;
+		background: #1a1a1a;
+		border: 1px solid white;
+	}
+
+	#submit:hover{
+		background: #fbd699;
+		color: black;
+		border: 1px solid black;
+	}
+	/*END SUBMIT BUTTON*/
+
+/*END CONTACT PAGE CSS*/
+
 }
 
 /* Tablets */
