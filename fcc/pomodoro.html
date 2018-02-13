@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>Wilson Ung | Front-End Developer</title>
+	<meta name="author" content = "Wilson Ung">
+	<meta name="description" content = "Front-End Developer">
+	<link href="../img/logo2title.png" rel="icon" type="image/png">
+	<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+ 	<script type="text/javascript">google.load("jquery", "1.3.2");</script>		
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type = "text/javascript" src = "js/pomodoroscript.js"></script>
+	<link rel ="stylesheet" href="css/pomodorostyle.css">
+</head>
+
+<body id = "pomodoro_page">
+<div class = "container">
+  
+	<!-- Header -->
+	<div class = "header">
+		<div class = "logo">
+			<a href="../index.html" title="Wilson Ung"><img src="../img/logo2png.png"/></a>
+		</div>
+
+		<div class = "nav">
+			<ul>
+				<li>
+					<a href="../portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="../about.html">About</a>
+				</li>
+				<li>
+					<a href="../contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- End Header -->
+
+
+  <div class = "title">
+     <p id = "name">Pomodoro Clock</p>
+  </div>
+  
+  <div class = "clock fade fill">
+    <div class = "time">
+      <p class = "text hour">00</p>
+    </div>
+    <div class = "colon"><p>:</p></div>
+    <div class = "time">
+      <p class = "text minute">25</p>
+    </div>
+    <div class = "colon"><p>:</p></div>
+    <div class = "time">
+      <p class = "text second">00</p>
+    </div>
+    <div class = "btn">
+      <button id = "start">Start/Stop</button>
+    </div>
+  </div>
+  
+  <div class = "time_adjust">
+    <div id = "break_length">
+      <p> Break Length </p>
+      <button class = "minute_button break_dec">-</button><span class = "break_text">5</span><button class = "minute_button break_inc">+</button>
+    </div>
+    
+    <div id = "session_length">
+      <p> Session Length </p>
+      <button class = "minute_button session_dec">-</button><span class = "session_text">25</span><button class = "minute_button session_inc">+</button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

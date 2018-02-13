@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo|VT323|Ropa+Sans');
+
+
+@media (max-device-width: 2560px){
+	body{
+	  background: grey;
+	}
+	  
+	/*HEADER*/
+	  .header1{
+	    position: fixed;
+	    display: inline-block;
+	    margin: 0 auto;
+	    width: 100%;
+	    top: 20px;
+	    left: 0px;
+	    z-index: 1;
+	    height: 98px;
+	    line-height: 48px;
+	    /*background: red;*/
+	    overflow: hidden;
+	    transition: all 0.3s ease;
+	    text-transform: uppercase;
+	    font-family: "Cairo", Arial;
+	  }
+
+	  .header.move{
+	    transition: all 0.3s ease;
+	    line-height: 0px;
+	    background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,7));
+	  }
+
+	  a{
+	    text-decoration: none;
+	    color: #fff;
+	  }
+
+	  a:hover{
+	    color: #fbd699;
+	    text-decoration: none;
+	  }
+
+	  .logo{
+	    position: relative;
+	    display: inline-block;
+	    float: left;
+	    font-size: 20px;
+	    font-weight: bold;
+	    height: 30px;
+	    width: 240px;
+	    margin: 0px 60px;
+	    letter-spacing: 0.40rem;
+	    font-family: "Ropa Sans";
+	  }
+
+	  .logo img{
+	    position: relative;
+	    vertical-align: text-top;
+	    height: 60px;
+	    width: 60px;
+	  }
+
+	  .header1 li{
+	    list-style: none;
+	    float: left;
+	    font-size: 20px;
+	    margin: 5px;
+	    padding-top: 5px;
+	  }
+
+	  .nav{
+	    position: relative;
+	    display: inline-block;
+	    float: right;
+	    padding: 0px 60px;
+	  }
+	  /*END HEADER*/
+
+	.container-fluid{
+	  position: relative;
+	  background: #44326E;
+	  margin: 2px auto;
+	  max-width: 800px;
+	  padding: 5px 0px;
+	  top: 100px;
+
+	}
+
+	#header{
+	  position: relative;
+	  color: #cecfe0;
+	  padding: 5px 20px;
+	}
+
+	h1{
+	  text-align: left;
+	  margin: 15px 0px;
+	  text-transform: uppercase;
+	  font-family: "Courier New";
+	  font-weight: bold;
+	  font-size: 2.5em;
+	}
+
+	.item{
+	  float: right;
+	  clear: right;
+	  padding: 0px 0px;
+	  margin: 2px 0px;
+	  overflow: hidden;
+	  height: 20px;
+	  width: 20px;
+	  background: #e1e1e6;
+	  color: #565c53;
+	  font-weight: bold;
+	}
+
+	.online_color{
+	  color: #00942a;
+	}
+
+	.offline_color{
+	  color: #de4c4c;
+	}
+
+	.menu{
+	  position: absolute;
+	  right: 0px;
+	  bottom: 3px;
+	}
+
+	.logo_img{
+	  border-radius: 50%;
+	  height: 50px;
+	  width: 50px;
+	}
+
+	.row {
+	  margin: 4px 0px;
+	  line-height: 50px;
+	  width: 100%;
+	}
+
+	.row a{
+	  color: #008080;
+	}
+
+	#display{
+	  position: relative;
+	  background: #ecf0e7;
+	  width: 100%;
+	}
+
+	.g_online{
+	  background: #b8cca6;
+	}
+
+	.g_offline{
+	  background: #faebd7;
+	  color: #8ea7c2
+	}
+
+
+	.streaming{
+	  font-style: italic;
+	  font-size: 16px;
+	}
+
+	.active, .item:hover{
+	  width: 65px !important;
+	  cursor: pointer;
+	}
+
+	.circle{
+	  height: 10px;
+	  width: 10px; 
+	  border-radius: 50%;
+	  float: left;
+	  margin: 5px;
+	  border: 1px solid;
+	  background: #B9B9B9;
+	}
+}
