@@ -12,17 +12,14 @@
 	<script type = "text/javascript" src = "js/script.js"></script>
 </head>
 
-<body id = "home_page">
+<body id="contact_page">
 
-<div class = "page_wrap">
-
-<!-- 	<div class = "banner">
-	</div> -->
+<div class = "page_wrap contact_wrap">
 
 	<!-- Header -->
 	<div class = "header">
 		<div class = "logo">
-			<a href="#home" title="Wilson Ung"><img src="./img/logo2png.png"/></a>
+			<a href="./index.html" title="Wilson Ung"><img src="./img/logo2png.png"/></a>
 		</div>
 
 		<div class = "nav">
@@ -34,42 +31,52 @@
 					<a href="./about.html">About</a>
 				</li>
 				<li>
-					<a href="./contactp.php">Contact</a>
+					<a href="./contact.html">Contact</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<!-- End Header -->
+	<!-- End Header -->	
 
-	<div id="page1" class = "home_container">
-
-		<!-- Hello, World -->
-		<div class = "content_hello">
-			<span class = "content_container_text">
-				Hello, 
-			</span>
-
-			<ul class = "content_container_list">
-				<li class = "content_container_list_item"> world! </li>
-				<li class = "content_container_list_item"> i'm Wilson. </li>
-			</ul>
+	<div id = "page4" class = "container contact_container">
+		<div class = "page_title">
+			<h2>Contact Me</h2>
 		</div>
-		<!-- End Hello, World -->
 
 		<div class = "intro">
-			<h1 class = "caption">Front-End Web Developer</h1>
-			<span> Based in Los Angeles, CA.</br></span>
-			<span> "I can't change the direction of the wind, but I can adjust my sails to always reach my destination." -Jimmy Dean </span>
+			<p>Want to get in touch? Please enquire below or send me an <a href ="mailto:ungwilson94@gmail.com"><strong>email</strong></a>.</p>
+		</div>
+
+		<div class = "contact_form">
+			<form autocomplete="on" action ="contactphp.php" method = "POST">
+				<label>Name*</label>
+				<input name="first_name" placeholder="First Name" class = "first">
+				<input name="last_name" placeholder="Last Name" class = "last">	
+
+				<label>Email*</label>
+				<input name="email" type="email" placeholder="Email">
+
+				<label>Subject*</label>
+				<input name="subject" placeholder="Subject">
+
+				<label>Message*</label>
+				<textarea name="message" placeholder="Type message here."></textarea>
+
+				<div class = "move_submit">
+					<input id="submit" name="submit" type="submit" value="Submit">
+				</div>
+			</form>
 		</div>
 	</div>
 
-	<div class = "next_page">
-		<span><a href = "./portfolio.html" class = "right_arrow" title = "Portfolio"></a></span>
+
+	<!-- Arrow to previous page -->
+	<div class = "previous_page">
+		<span><a href = "./about.html" class = "left_arrow" title = "Homepage"></a></span>
 	</div>
 
 	<div class = "push">
 	</div>
-
 	<!-- Footer -->
 	<div class = "footer">
 		<div class = "footer_content">
@@ -83,11 +90,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- End Footer -->
+	<!-- End Footer -->	
 
 </div>
 
 
 </body>
-
 </html>
