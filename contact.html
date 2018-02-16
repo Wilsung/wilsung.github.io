@@ -13,7 +13,6 @@
 </head>
 
 <body id="contact_page">
-
 <div class = "page_wrap contact_wrap">
 
 	<!-- Header -->
@@ -25,13 +24,13 @@
 		<div class = "nav">
 			<ul>
 				<li>
-					<a href="./portfolio.html">Portfolio</a>
+					<a href="./portfolio">Portfolio</a>
 				</li>
 				<li>
-					<a href="./about.html">About</a>
+					<a href="./about">About</a>
 				</li>
 				<li>
-					<a href="./contact.html">Contact</a>
+					<a href="./contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -48,19 +47,18 @@
 		</div>
 
 		<div class = "contact_form">
-			<form autocomplete="on" action ="contactphp.php" method = "POST">
+			<form autocomplete="on" action ="https://formspree.io/ungwilson94@email.com" method = "POST">
 				<label>Name*</label>
-				<input name="first_name" placeholder="First Name" class = "first">
-				<input name="last_name" placeholder="Last Name" class = "last">	
+				<input name="name" placeholder="Name" type = "text" required>
 
 				<label>Email*</label>
-				<input name="email" type="email" placeholder="Email">
+				<input name="email" type="email" placeholder="Email" required>
 
 				<label>Subject*</label>
-				<input name="subject" placeholder="Subject">
+				<input name="_subject" type="text" placeholder="Subject" required>				
 
 				<label>Message*</label>
-				<textarea name="message" placeholder="Type message here."></textarea>
+				<textarea name="message" placeholder="Type message here." required></textarea>
 
 				<div class = "move_submit">
 					<input id="submit" name="submit" type="submit" value="Submit">

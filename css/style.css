@@ -572,10 +572,6 @@
 		color: #3a3a3a;
 	}
 
-	.contact_form .first, .contact_form .last{
-		width: 236px;
-	}
-
 	.contact_form textarea{
 		height: 70px;
 		max-height: 100px;
@@ -588,10 +584,14 @@
 
 	/*SUBMIT BUTTON*/
 	.move_submit{
+		position: relative;
 		margin: 0 auto;
+		top: 0px;
+		right: 10px;
 		width: 127px;
 		height: 38px;
 	}
+
 	#submit{
 		margin: 0 auto;
 		width: 127px;
