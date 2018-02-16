@@ -12,6 +12,6 @@
 
 	if (isset($_POST['submit'])){
 		mail($to, $subject, $body, $from);
-		header("Location: contact.html?mailsend");
+		echo "<p>Mail sent!</p>";
 	}
 ?>

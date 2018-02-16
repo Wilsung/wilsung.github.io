@@ -13,6 +13,7 @@
 </head>
 
 <body id="contact_page">
+
 <div class = "page_wrap contact_wrap">
 
 	<!-- Header -->
@@ -24,13 +25,13 @@
 		<div class = "nav">
 			<ul>
 				<li>
-					<a href="./portfolio">Portfolio</a>
+					<a href="./portfolio.html">Portfolio</a>
 				</li>
 				<li>
-					<a href="./about">About</a>
+					<a href="./about.html">About</a>
 				</li>
 				<li>
-					<a href="./contact">Contact</a>
+					<a href="./contact.html">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -45,20 +46,21 @@
 		<div class = "intro">
 			<p>Want to get in touch? Please enquire below or send me an <a href ="mailto:ungwilson94@gmail.com"><strong>email</strong></a>.</p>
 		</div>
-		<?php include 'contactphp.php'?>
+
 		<div class = "contact_form">
-			<form autocomplete="on" action ="https://formspree.io/ungwilson94@email.com" method = "POST">
+			<form autocomplete="on" action ="contactphp.php" method = "POST">
 				<label>Name*</label>
-				<input name="name" placeholder="Name" type = "text" required>
+				<input name="first_name" placeholder="First Name" class = "first">
+				<input name="last_name" placeholder="Last Name" class = "last">	
 
 				<label>Email*</label>
-				<input name="email" type="email" placeholder="Email" required>
+				<input name="email" type="email" placeholder="Email">
 
 				<label>Subject*</label>
-				<input name="_subject" type="text" placeholder="Subject" required>				
+				<input name="subject" placeholder="Subject">
 
 				<label>Message*</label>
-				<textarea name="message" placeholder="Type message here." required></textarea>
+				<textarea name="message" placeholder="Type message here."></textarea>
 
 				<div class = "move_submit">
 					<input id="submit" name="submit" type="submit" value="Submit">
