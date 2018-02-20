@@ -28,6 +28,21 @@ $(function() {
   });
 
 
+ $(window).resize(function() {
+  if ($(window).width() > 330) {
+    $('.about_container').css({'height':  '2270px'});
+  }else if($(window).width() > 300){
+    $('.about_container').css({'height':  '2470px'});
+    $('.education_content .uci').css({'height':  '400px'});
+    $('.fcc').css({'height':  '400px'});    
+  }else{
+    $('.about_container').css({'height':  '2670px'});
+    $('.education_content .uci').css({'height':  '540px'});
+    $('.fcc').css({'height':  '540px'});    
+  }
+ });  
+
+
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if (scroll > moveHeader && $(window).width() > 767){

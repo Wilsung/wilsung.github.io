@@ -1293,7 +1293,7 @@
 
 
 /* Low Resolution Tablets, Mobiles */
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 200px) and (max-width: 480px){
 
 /*HOMEPAGE CSS*/
 	/*HOMEPAGE BODY*/
@@ -1301,22 +1301,31 @@
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;	
-		font-size: 1.05rem;	
+		font-size: 0.9rem;	
 	}
 
 	.content_hello{
-		width: 310px;
-		font-size: 24px;
-		height: 50px;
+		width: 190px;
+		font-size: 16px;
+		height: 40px;
 	}
 
 	.content_hello:before, .content_hello:after{
-	    font-size: 25px;
+	    font-size: 16px;
+	}	
+
+	.content_container_text{
+		padding-left: 10px;
+	}
+
+	.content_container_list{
+		float: left;
+		margin-left: 15px;
 	}	
 
 	@-webkit-keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,24%,0);}
-		50%, 75% {transform:translate3d(0,-25.5%,0);}
+		0%, 25%, 100% {transform:translate3d(0,62%,0);}
+		50%, 75% {transform:translate3d(0,13%,0);}
 	}
 
 	.home_container{
@@ -1326,7 +1335,7 @@
 	}
 
 	.intro .caption{
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.intro span{
@@ -1371,7 +1380,7 @@
 		left: -40px;
 		padding: 0px 0px;
 		margin: 0px;
-		width: 114%;
+		width: 116%;
 		top: 84px;
 		z-index: 1;
 		font-size: 12px;
@@ -1408,6 +1417,25 @@
 	}
 	/*END HEADER*/	
 
+	/* FOOTER */
+	.footer{
+		font-size: 11px;
+		text-align: center;
+		padding-top: 8px;
+	}
+
+	.footer_content{
+		margin: 0 auto;
+		width: 200px;
+		display: inline-block;
+	}
+
+	.footer li{
+		left: -20px;
+		margin: 0px 8px;
+	}
+	/*END FOOTER*/	
+
 	/*ARROW TO PREVIOUS PAGE*/
 	.previous_page{
 		display: none;
@@ -1431,45 +1459,46 @@
 /*PORTFOLIO PAGE CSS*/
 	/*PORTFOLIO BODY*/
 	#portfolio_page{
-		width: 98%;
+		width: 96%;
 		min-height: 1300px;
 		font-size: 0.8rem;	
 	}
 
 	.port_wrap{
-		width: 100%;
+		width: 99%;
 		height: 2300px;
 	}
 
 	.page_title{
-		width: 400px;
+		width: 200px;
 		left: -18px;
 	}
 
 	/*CONTENT CONTAINER*/
 	.container{
-		height: 1870px;
-		width: 95%;
+		height: 2040px;
+		width: 92%;
 	}
 
 	.portfolio_content{
 		position: relative;
 		float: none;
 		text-align: center;
-		width: 95%;
+		width: 93%;
 	}
 
 	.portfolio_content .image{
 		float: none;
 		text-align: center;
-		width: 200px;
-		height: 150px;
+		width: 150px;
+		height: 100px;
 		margin-right: 40px;
 	}
 
 	.portfolio_list li{
 		height: 400px;
-		margin: 0px 0px 30px 0px;
+		width: 95%;
+		margin: 0px 0px 95px 0px;
 	}
 
 	.portfolio_list .wikipedia_content, .pomodoro_content, .calculator_content, .twitch_content{
@@ -1484,7 +1513,7 @@
 	#about_me_page{
 		font-family: "Cairo", Arial, Helvetica;
 		font-size: 0.8rem;
-		width: 96%;
+		width: 93%;
 	}
 
 	#page3 .intro{
@@ -1494,26 +1523,27 @@
 	}
 
 	.about_container{
-		height: 2150px;
+		height: 2670px;
 		width: 93%;
 	}
 
 	.about_wrap{
-		width: 99%;
+		width: 98%;
 		height: 100%;
 	}
 
 	.about_me_content{
 		width: 95%;
 		height: 300px;
+		margin-right: 25px;
 	}
 
 	.about_me_content .wilson_picture{
-		height: 180px;
+		height: 130px;
 	}
 
 	.about_me_content .image{
-		height: 145px;
+		height: 105px;
 	}
 
 	.about_me_content .description{
@@ -1524,18 +1554,19 @@
 	}	
 
 	.skills_section{
-		top: 20px;
+		top: 45px;
 	}
 
 	.skills_logo .logo{
-		margin-right: 0px;
-		margin-bottom: 20px;
-		left: -10px;
+		margin: 0px;
+		padding: 0px;
+		font-size: 10px;
+		left: -15px;
 	}
 
 	.skills_logo .logo img{
-		width: 45px; 
-		height: 45px;
+		width: 35px; 
+		height: 35px;
 	}
 
 	.skills_description{
@@ -1544,24 +1575,27 @@
 
 	.logo_1{
 		float: left;
-		width: 94%;
-		height: 250px;
+		width: 93%;
+		margin: 0px;
+		padding-top: 20px;
+		height: auto;
 		margin: 0 auto;
 	}
 
 	/*Education Section*/
 	.education_section{
+		top: 20px;
 		left: 20px;
 	}
 
 	.education_section .education_content{
 		width: 95%;
-		height: 300px;
+		height: 400px;
 	}
 
 	.education_content .uci, .fcc{
 		width: 98%;
-		height: 400px;
+		height: 540px;
 		float: none;
 		text-align: center;
 	}
@@ -1571,8 +1605,9 @@
 	}
 
 	.education_content .picture img{
-		height: 160px;
-		width: 160px;
+		height: 120px;
+		width: 120px;
+		right: 20px;
 		margin: 0 auto;
 		float: none;
 	}
@@ -1589,19 +1624,20 @@
 
 /*CONTACT PAGE CSS*/
 	#contact_page{
-		font-size: 1.05rem;	
+		font-size: 0.85rem;	
 	}
 
 	.contact_wrap{
-		width: 100%;
+		width: 99%;
 	}
 	.contact_container{
-		width: 95%;
+		width: 93%;
 		height: 675px;
 	}
 
 	.contact_container .intro{
 		top: 5px;
+		right: 10px;
 	}
 
 	#page4 .intro{
@@ -1616,14 +1652,14 @@
 	}
 
 	.contact_form input, textarea{
-		width: 400px;
+		width: 180px;
 		height: 25px;
 	}
 
 	.contact_form textarea{
 		height: 70px;
 		max-height: 80px;
-		max-width: 400px;
+		max-width: 180px;
 	}
 
 	.move_submit{
