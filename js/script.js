@@ -16,10 +16,23 @@ $(function() {
   });
   //End here
 
+
+  $('.navbar-toggle').click(function() {
+    if(!$('.navbar-toggle').hasClass('active')){
+      $('.navbar-toggle').addClass('active');
+      $('.nav').removeClass('collapsed');
+    }else{
+      $('.navbar-toggle').removeClass('active'); 
+      $('.nav').addClass('collapsed');
+    }
+  });
+
+
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
-      if (scroll > moveHeader){
+      if (scroll > moveHeader && $(window).width() > 767){
         $('.header').addClass('move');
+        $('.nav').addClass('collapsed');
       }else{
         $('.header').removeClass('move');
       }
