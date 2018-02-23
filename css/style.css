@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo|VT323|Ropa+Sans');
 
 /* Large Desktops */
-@media (min-device-width: 1281px){
+@media (max-device-width: 10000px){
 	
 /*HOMEPAGE CSS*/
 	/*HOMEPAGE BODY*/
@@ -1349,6 +1349,7 @@
 	#home_page{
 		min-width: 200px;
 		width: 100%;
+		background: url('../img/bg2.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;	
