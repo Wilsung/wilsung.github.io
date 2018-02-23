@@ -126,12 +126,12 @@
 		/*float: left;*/
 		margin: 0 auto;
 		/*text-align: center;*/
-		width: 420px;
+		width: 380px;
 		font-size: 35px;
 		font-weight: 600;
 		height: 50px;
 		top: 40px;
-		overflow: hidden;
+		text-align: center;
 		font-family: "Cairo", Arial;
 	}
 
@@ -168,8 +168,7 @@
 		display: inline-block;
 		float: left;
 		line-height: 40px;
-		padding-left: 30px;
-		/*top: -40px;*/
+		padding-left: 30px;		/*top: -40px;*/
 	}
 
 	.content_container_list{
@@ -1357,7 +1356,7 @@
 	}
 
 	.content_hello{
-		width: 210px;
+		width: 175px;
 		font-size: 16px;
 		height: 40px;
 	}
@@ -1379,12 +1378,12 @@
 	}	
 
 	@-webkit-keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,64.5%,0);}
+		0%, 25%, 100% {transform:translate3d(0,65%,0);}
 		50%, 75% {transform:translate3d(0,13%,0);}
 	}
 
 	@keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,64.5%,0);}
+		0%, 25%, 100% {transform:translate3d(0,65%,0);}
 		50%, 75% {transform:translate3d(0,13%,0);}
 	}	
 
