@@ -1351,7 +1351,6 @@
 		width: 100%;
 		background: url('../img/bg2.jpg');
 		background-position: center;
-		background: red;
 		background-size: cover;
 		background-attachment: fixed;	
 		font-size: 0.9rem;	
@@ -1380,13 +1379,13 @@
 	}	
 
 	@-webkit-keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,62%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		0%, 25%, 100% {transform:translate3d(0,61.5%,0);}
+		50%, 75% {transform:translate3d(0,12.5%,0);}
 	}
 
 	@keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,62%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		0%, 25%, 100% {transform:translate3d(0,61.5%,0);}
+		50%, 75% {transform:translate3d(0,12.5%,0);}
 	}	
 
 	.home_container{
