@@ -1357,7 +1357,7 @@
 	}
 
 	.content_hello{
-		width: 190px;
+		width: 195px;
 		font-size: 16px;
 		height: 40px;
 	}
@@ -1380,12 +1380,12 @@
 
 	@-webkit-keyframes change {
 		0%, 25%, 100% {transform:translate3d(0,61.5%,0);}
-		50%, 75% {transform:translate3d(0,12.5%,0);}
+		50%, 75% {transform:translate3d(0,13%,0);}
 	}
 
 	@keyframes change {
 		0%, 25%, 100% {transform:translate3d(0,61.5%,0);}
-		50%, 75% {transform:translate3d(0,12.5%,0);}
+		50%, 75% {transform:translate3d(0,13%,0);}
 	}	
 
 	.home_container{
