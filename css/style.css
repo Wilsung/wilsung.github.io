@@ -1014,12 +1014,12 @@
 	}	
 
 	@-webkit-keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,22%,0);}
+		0%, 25%, 100% {transform:translate3d(0,22.5%,0);}
 		50%, 75% {transform:translate3d(0,-26.5%,0);}
 	}
 
 	@keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,22%,0);}
+		0%, 25%, 100% {transform:translate3d(0,22.5%,0);}
 		50%, 75% {transform:translate3d(0,-26.5%,0);}
 	}	
 
