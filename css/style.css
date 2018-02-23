@@ -1380,12 +1380,12 @@
 
 	@-webkit-keyframes change {
 		0%, 25%, 100% {transform:translate3d(0,62%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		50%, 75% {transform:translate3d(0,14%,0);}
 	}
 
 	@keyframes change {
 		0%, 25%, 100% {transform:translate3d(0,62%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		50%, 75% {transform:translate3d(0,14%,0);}
 	}	
 
 	.home_container{
