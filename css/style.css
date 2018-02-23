@@ -1351,6 +1351,7 @@
 		width: 100%;
 		background: url('../img/bg2.jpg');
 		background-position: center;
+		background: red;
 		background-size: cover;
 		background-attachment: fixed;	
 		font-size: 0.9rem;	
