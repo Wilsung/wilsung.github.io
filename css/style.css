@@ -148,7 +148,7 @@
 	}
 
 	.content_hello:before, .content_hello:after{
-		position: relative;
+		position: absolute;
 	    top: 0;
 	      
 	    color: #fbd699;
@@ -165,10 +165,9 @@
 
 	.content_container_text{
 		position: relative;
-		display: inline-block;
-		float: left;
 		line-height: 40px;
-		padding-left: 30px;
+		margin: 0 auto;
+		padding-right: 10px;
 		/*top: -40px;*/
 	}
 
@@ -806,7 +805,7 @@
 	}
 
 	.content_hello{
-		width: 310px;
+		width: 280px;
 		font-size: 24px;
 		height: 50px;
 	}
@@ -1004,7 +1003,7 @@
 	}
 
 	.content_hello{
-		width: 310px;
+		width: 270px;
 		font-size: 24px;
 		height: 50px;
 	}
@@ -1357,7 +1356,7 @@
 	}
 
 	.content_hello{
-		width: 210px;
+		width: 180px;
 		font-size: 16px;
 		height: 40px;
 		overflow: hidden;
