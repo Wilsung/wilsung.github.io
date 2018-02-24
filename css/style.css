@@ -1360,6 +1360,7 @@
 		width: 210px;
 		font-size: 16px;
 		height: 40px;
+		overflow: hidden;
 	}
 
 	.content_hello:before, .content_hello:after{
