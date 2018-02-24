@@ -1380,13 +1380,13 @@
 	}	
 
 	@-webkit-keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,61%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		0%, 25%, 100% {transform:translate3d(0,59.5%,0);}
+		50%, 75% {transform:translate3d(0,11%,0);}
 	}
 
 	@keyframes change {
-		0%, 25%, 100% {transform:translate3d(0,61%,0);}
-		50%, 75% {transform:translate3d(0,13%,0);}
+		0%, 25%, 100% {transform:translate3d(0,59.5%,0);}
+		50%, 75% {transform:translate3d(0,11%,0);}
 	}	
 
 	.home_container{
