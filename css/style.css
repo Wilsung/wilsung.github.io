@@ -256,13 +256,12 @@
 
 
 	/*ARROW TO PREVIOUS PAGE*/
-	.previous_page{
+/*	.previous_page{
 		position: fixed;
 		float: left;
 		height: 60px;
 		width: 30px;
 		left: 70px;
-		/*top: 420px;*/
 		top: 45%;
 	}
 
@@ -277,17 +276,16 @@
 	.left_arrow:hover{
 		border: solid #fbd699;
 		border-width: 0 3px 3px 0;
-	}
+	}*/
 	/*END LEFT ARROW*/
 
 	/*ARROW TO NEXT PAGE*/
-	.next_page{
+/*	.next_page{
 		position: fixed;
 		float: right;
 		height: 60px;
 		width: 30px;
 		right: 70px;
-		/*top: 420px;*/
 		top: 45%;
 	}
 
@@ -302,7 +300,7 @@
 	.right_arrow:hover{
 		border: solid #fbd699;
 		border-width: 0 3px 3px 0;
-	}
+	}*/
 	/*END RIGHT ARROW*/
 
 
@@ -1112,23 +1110,23 @@
 	/*END HEADER*/	
 
 	/*ARROW TO PREVIOUS PAGE*/
-	.previous_page{
+/*	.previous_page{
 		display: none;
 	}
 
 	.left_arrow{
 		display: none;
-	}
+	}*/
 	/*END LEFT ARROW*/
 
 	/*ARROW TO NEXT PAGE*/
-	.next_page{
+/*	.next_page{
 		display: none;
 	}
 
 	.right_arrow{
 		display: none;
-	}
+	}*/
 	/*END RIGHT ARROW*/
 
 /*PORTFOLIO PAGE CSS*/
@@ -1497,23 +1495,23 @@
 	/*END FOOTER*/	
 
 	/*ARROW TO PREVIOUS PAGE*/
-	.previous_page{
+/*	.previous_page{
 		display: none;
 	}
 
 	.left_arrow{
 		display: none;
-	}
+	}*/
 	/*END LEFT ARROW*/
 
 	/*ARROW TO NEXT PAGE*/
-	.next_page{
+/*	.next_page{
 		display: none;
 	}
 
 	.right_arrow{
 		display: none;
-	}
+	}*/
 	/*END RIGHT ARROW*/
 
 /*PORTFOLIO PAGE CSS*/
